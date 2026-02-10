@@ -1,39 +1,19 @@
-gsap.registerPlugin(ScrollTrigger);
+gsap.from(".hero-text", { y: 50, opacity: 0, duration: 1 });
+gsap.from(".hero-image", { scale: 0.9, opacity: 0, delay: 0.3 });
 
-// HEADER
-gsap.from(".header", {
-  y: -50,
+gsap.from(".feature", {
+  scrollTrigger: ".features",
+  y: 30,
   opacity: 0,
-  duration: 1
+  stagger: 0.15
 });
 
-// HERO
-gsap.from(".hero-title", {
-  y: 60,
-  opacity: 0,
-  duration: 1,
-  delay: 0.3
-});
+// THEME TOGGLE
+const toggle = document.getElementById("themeToggle");
+const html = document.documentElement;
 
-gsap.from(".hero-text", {
-  y: 40,
-  opacity: 0,
-  delay: 0.6
-});
-
-gsap.from(".btn-primary", {
-  y: 20,
-  opacity: 0,
-  delay: 0.9
-});
-
-// PRODUCTS
-gsap.from(".product-card", {
-  scrollTrigger: {
-    trigger: ".products",
-    start: "top 80%",
-  },
-  y: 60,
-  opacity: 0,
-  stagger: 0.2
-});
+toggle.onclick = () => {
+  const theme = html.getAttribute("data-theme");
+  html.setAttribute("data-theme", theme === "dark" ? "light" : "dark");
+  toggle.textContent = theme === "dark" ? "🌙" : "☀️";
+};
