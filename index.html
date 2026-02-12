@@ -1,92 +1,35 @@
 <!DOCTYPE html>
-<html lang="pt-br" data-theme="light">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>NOVA Watch</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <title>Tevus Air Watch D8 Pro</title>
   <link rel="stylesheet" href="style.css">
-</head>
 
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
 <body>
 
-<header class="header">
-  <h1 class="logo">NOVA</h1>
+  <section class="hero">
+    <h1 class="reveal">Tevus Air Watch D8 Pro</h1>
+    <p class="reveal">Tecnologia avançada no seu pulso.</p>
+  </section>
 
-  <nav>
-    <a href="#features">Funcionalidades</a>
-    <a href="#compare">Comparação</a>
-    <a href="#price">Preço</a>
-  </nav>
+  <section class="product">
+    <img src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b" class="watch reveal">
+  </section>
 
-  <button id="themeToggle">🌙</button>
-</header>
+  <section class="features">
+    <h2 class="reveal">Monitoramento Inteligente</h2>
+    <p class="reveal">Batimentos cardíacos, oxigenação, sono e muito mais.</p>
+  </section>
 
-<section class="hero">
-  <div class="hero-text">
-    <h2>O smartwatch que entrega tudo.</h2>
-    <p>Saúde, performance e design premium sem pagar pelo nome.</p>
-    <a href="#price" class="btn">Comprar agora</a>
-  </div>
+  <section class="cta">
+    <h2 class="reveal">Pronto para evoluir?</h2>
+    <button class="reveal">Comprar agora</button>
+  </section>
 
-  <div class="hero-image">
-    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="Smart Watch">
-  </div>
-</section>
-
-<section id="features" class="features">
-  <h3>Funcionalidades</h3>
-
-  <div class="features-grid">
-    <div class="feature">❤️ Monitor cardíaco 24h</div>
-    <div class="feature">🩸 Oxigenação do sangue (SpO₂)</div>
-    <div class="feature">😴 Monitor de sono</div>
-    <div class="feature">🏃 100+ modos esportivos</div>
-    <div class="feature">🧭 GPS integrado</div>
-    <div class="feature">🔋 Bateria até 10 dias</div>
-  </div>
-</section>
-
-<section id="compare" class="compare">
-  <h3>Por que é melhor que o Apple Watch?</h3>
-
-  <table>
-    <tr>
-      <th></th>
-      <th>NOVA Watch</th>
-      <th>Apple Watch</th>
-    </tr>
-    <tr>
-      <td>Preço</td>
-      <td>R$ 599</td>
-      <td>R$ 2.500+</td>
-    </tr>
-    <tr>
-      <td>Bateria</td>
-      <td>10 dias</td>
-      <td>1 dia</td>
-    </tr>
-    <tr>
-      <td>Android</td>
-      <td>✅</td>
-      <td>❌</td>
-    </tr>
-    <tr>
-      <td>iOS</td>
-      <td>✅</td>
-      <td>✅</td>
-    </tr>
-  </table>
-</section>
-
-<section id="price" class="price">
-  <h3>Preço justo. Sem taxas escondidas.</h3>
-  <p class="value">R$ 599</p>
-  <button class="btn">Adicionar ao carrinho</button>
-</section>
-
-<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
