@@ -14,29 +14,22 @@ body{
   overflow-x:hidden;
 }
 
+section{
+  padding:120px 8%;
+  text-align:center;
+}
+
 /* HERO */
 
 .hero{
   min-height:100vh;
   display:flex;
   align-items:center;
-  justify-content:space-between;
-  padding:0 8%;
-}
-
-.hero-content{
-  max-width:500px;
+  justify-content:center;
 }
 
 .hero h1{
-  font-size:3rem;
-  margin-bottom:10px;
-}
-
-.hero p{
-  font-size:1.2rem;
-  opacity:.8;
-  margin-bottom:30px;
+  font-size:4rem;
 }
 
 .highlight{
@@ -44,13 +37,14 @@ body{
 }
 
 .btn{
+  display:inline-block;
+  margin-top:30px;
   padding:15px 40px;
   border-radius:40px;
-  border:none;
   background:linear-gradient(90deg,#0077ff,#00c3ff);
   color:white;
+  text-decoration:none;
   font-weight:bold;
-  cursor:pointer;
   transition:.3s;
 }
 
@@ -59,36 +53,17 @@ body{
   box-shadow:0 0 25px rgba(0,119,255,.6);
 }
 
-/* IMAGENS */
+/* ABOUT */
 
-.hero-images{
-  position:relative;
-  width:400px;
-  height:400px;
+.about p{
+  max-width:700px;
+  margin:20px auto;
+  opacity:.8;
 }
 
-.watch{
-  position:absolute;
-  width:100%;
-  filter:drop-shadow(0 0 30px rgba(0,119,255,.6));
-  will-change:transform;
-}
+/* PROJECTS */
 
-.watch-side{
-  top:40px;
-  left:-60px;
-  width:80%;
-  opacity:.6;
-}
-
-/* COMPARAÇÃO */
-
-.comparison{
-  padding:120px 8%;
-  text-align:center;
-}
-
-.compare-grid{
+.project-grid{
   display:flex;
   gap:40px;
   margin-top:60px;
@@ -96,7 +71,7 @@ body{
   flex-wrap:wrap;
 }
 
-.card{
+.project-card{
   background:rgba(255,255,255,0.05);
   backdrop-filter:blur(15px);
   padding:40px;
@@ -105,42 +80,29 @@ body{
   transition:.3s;
 }
 
-.card:hover{
+.project-card:hover{
   transform:translateY(-10px);
   box-shadow:0 0 30px rgba(0,119,255,.3);
 }
 
-.card ul{
-  list-style:none;
-  margin-top:20px;
-}
+/* SKILLS */
 
-.card li{
-  margin:10px 0;
-  opacity:.8;
-}
-
-/* SPECS */
-
-.specs{
-  padding:120px 8%;
-  text-align:center;
-}
-
-.spec-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+.skills-grid{
+  display:flex;
+  justify-content:center;
   gap:40px;
   margin-top:60px;
+  flex-wrap:wrap;
 }
 
-.spec{
+.skill{
   background:rgba(255,255,255,0.05);
   padding:40px;
   border-radius:20px;
+  width:200px;
 }
 
-.spec h3{
+.skill h3{
   font-size:2.5rem;
   color:#1e90ff;
 }
