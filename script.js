@@ -1,11 +1,9 @@
 gsap.registerPlugin(ScrollTrigger);
 
-// Hero
-gsap.from(".hero-content",{opacity:0,y:80,duration:1.5,ease:"power4.out"});
-gsap.from(".watch-main",{opacity:0,x:100,duration:1.5});
-gsap.from(".watch-side",{opacity:0,x:-100,duration:1.5,delay:.3});
+// Hero animation
+gsap.from(".hero-content",{opacity:0,y:80,duration:1.5});
 
-// Reveal Sections
+// Scroll reveal
 gsap.utils.toArray(".reveal").forEach((el)=>{
   gsap.to(el,{
     scrollTrigger:{
@@ -21,6 +19,7 @@ gsap.utils.toArray(".reveal").forEach((el)=>{
 
 // Counters
 const counters=document.querySelectorAll(".counter");
+
 counters.forEach(counter=>{
   ScrollTrigger.create({
     trigger:counter,
